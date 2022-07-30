@@ -5,5 +5,5 @@ import usersAPI from './usersAPI';
 export default (): Router => {
   const app = Router();
   usersAPI(app);
-    return app;
+  return app;
 };
