@@ -1,9 +1,8 @@
 import { get, post, getById, deleteById, patch } from './usersController';
 import { Router } from 'express';
-import asyncErrorWrapper from '@/middlewares/asyncErrorHandleMiddleware'
+import asyncErrorWrapper from '@/middlewares/asyncErrorHandleMiddleware';
 
 export default (router: Router) => {
-
   // ユーザ一覧取得
   router.get('/', asyncErrorWrapper(get));
 

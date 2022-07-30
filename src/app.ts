@@ -12,10 +12,10 @@ async function startServer() {
    * So we are using good old require.
    **/
   await require('./loaders').default({ expressApp: app });
-  
+
   // Listen to the App Engine-specified port
   app.listen(config.port, () => {
-    Logger.info(`Server listening on port: ${config.port}`)
+    Logger.info(`Server listening on port: ${config.port}`);
   });
 }
 

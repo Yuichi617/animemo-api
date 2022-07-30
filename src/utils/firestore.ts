@@ -5,7 +5,7 @@ import config from '@/config';
 const serviceAccount = config.serviceAccountKey as any;
 
 initializeApp({
-  credential: cert(serviceAccount)
+  credential: cert(serviceAccount),
 });
 
 export const db = getFirestore();

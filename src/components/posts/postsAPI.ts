@@ -1,9 +1,8 @@
 import { get, post, deleteById, patch } from './postsController';
 import { Router } from 'express';
-import asyncErrorWrapper from '@/middlewares/asyncErrorHandleMiddleware'
+import asyncErrorWrapper from '@/middlewares/asyncErrorHandleMiddleware';
 
 export default (router: Router) => {
-
   // 投稿覧取得
   router.get('/', asyncErrorWrapper(get));
 
