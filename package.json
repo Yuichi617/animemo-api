@@ -4,10 +4,11 @@
   "description": "",
   "main": "src/app.ts",
   "scripts": {
-    "start": "nodemon",
+    "start": "node -r tsconfig-paths/register build/app.js",
+    "dev": "nodemon",
     "build": "npm-run-all clean tsc",
     "clean": "rimraf dist/*",
-    "tsc": "tsc",
+    "tsc": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
     "test": "jest",
     "check-types": "tsc --noEmit",
     "eslint": "eslint src/**/*.ts",
@@ -62,6 +63,7 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^28.0.7",
     "ts-node": "^10.9.1",
+    "tsc-alias": "^1.7.0",
     "tsconfig-paths": "^4.0.0",
     "typescript": "^4.7.4"
   }
