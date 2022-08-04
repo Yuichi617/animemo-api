@@ -1,8 +1,8 @@
-# service: api
 runtime: nodejs14
 # env: standard
+# service: api
 # instance_class: F1
-# entrypoint: ./berglas exec -- npm start
+entrypoint: ./berglas exec -- npm start
 env_variables:
   PORT: 8080
   LOG_LEVEL: "info"
