@@ -6,7 +6,7 @@ env_variables:
   PORT: 8080
   LOG_LEVEL: "info"
   NODE_ENV: "production"
-  FIREBASE_TYPE: berglas://animemo-secrets/db-username
+  FIREBASE_TYPE: berglas://animemo-secrets/type
   FIREBASE_PROJECT_ID: berglas://animemo-secrets/project_id
   FIREBASE_PRIVATE_KEY_ID: berglas://animemo-secrets/private_key_id
   FIREBASE_PRIVATE_KEY: berglas://animemo-secrets/private_key
