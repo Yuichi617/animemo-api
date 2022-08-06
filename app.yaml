@@ -2,15 +2,15 @@ runtime: nodejs14
 env: standard
 instance_class: F1
   automatic_scaling:
-  target_cpu_utilization: 0.75
-  target_throughput_utilization: 0.75
-  max_instances: 5
-  min_instances: 0
-  max_idle_instances: 0
-  min_idle_instances: 0
-  min_pending_latency: 30ms
-  max_pending_latency: automatic
-  max_concurrent_requests: 80
+    target_cpu_utilization: 0.75
+    target_throughput_utilization: 0.75
+    max_instances: 5
+    min_instances: 0
+    max_idle_instances: 0
+    min_idle_instances: 0
+    min_pending_latency: 30ms
+    max_pending_latency: automatic
+    max_concurrent_requests: 80
 service: api
 entrypoint: ./berglas exec -- npm start
 env_variables:
