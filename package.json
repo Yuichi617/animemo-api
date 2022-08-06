@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/Yuichi617/animemo-api#readme",
   "dependencies": {
+    "@google-cloud/logging-winston": "^5.1.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",

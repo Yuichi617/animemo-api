@@ -1,5 +1,9 @@
 import winston from 'winston';
 import config from '@/config';
+// Imports the Google Cloud client library for Winston
+import { LoggingWinston } from '@google-cloud/logging-winston';
+
+const loggingWinston = new LoggingWinston();
 
 let LoggerInstance;
 
@@ -15,7 +19,7 @@ if (process.env.NODE_ENV !== 'development') {
       winston.format.splat(),
       winston.format.json(),
     ),
-    transports: [new winston.transports.Console()],
+    transports: [new winston.transports.Console(), loggingWinston],
   });
 } else {
   LoggerInstance = winston.createLogger({
