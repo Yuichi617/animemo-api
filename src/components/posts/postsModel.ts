@@ -12,9 +12,9 @@ export const selectAll = async (): Promise<Post[]> => {
   querySnapshot.forEach(postDoc => {
     const tmp: Post = {
       id: postDoc.id,
-      user: postDoc.data().user,
       animeName: postDoc.data().animeName,
       rating: postDoc.data().rating,
+      createdAt: postDoc.data().createdAt,
     };
     posts.push(tmp);
   });
@@ -29,9 +29,9 @@ export const selectByUser = async (user: string): Promise<Post[]> => {
   querySnapshot.forEach(postDoc => {
     const tmp: Post = {
       id: postDoc.id,
-      user: postDoc.data().user,
       animeName: postDoc.data().animeName,
       rating: postDoc.data().rating,
+      createdAt: postDoc.data().createdAt,
     };
     posts.push(tmp);
   });

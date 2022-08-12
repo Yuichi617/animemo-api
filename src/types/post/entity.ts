@@ -1,6 +1,6 @@
 export type Post = {
   id: string;
-  user: string;
+  user?: string;
   animeName: string;
   rating: number;
   createdAt?: string;
