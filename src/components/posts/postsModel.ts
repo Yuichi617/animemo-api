@@ -2,6 +2,7 @@ import { db } from '@/utils/firestore';
 import { FieldValue } from 'firebase-admin/firestore';
 import { Post } from '@/types/post/entity';
 import { PostPatchParam, PostPostParam } from '@/types/post/form';
+import { dateToString } from '@/utils/DateToString';
 
 const postsRef = db.collection('posts');
 
@@ -14,7 +15,7 @@ export const selectAll = async (): Promise<Post[]> => {
       id: postDoc.id,
       animeName: postDoc.data().animeName,
       rating: postDoc.data().rating,
-      createdAt: postDoc.data().createdAt,
+      createdAt: dateToString(postDoc.data().createdAt.toDate()),
     };
     posts.push(tmp);
   });
@@ -31,7 +32,7 @@ export const selectByUser = async (user: string): Promise<Post[]> => {
       id: postDoc.id,
       animeName: postDoc.data().animeName,
       rating: postDoc.data().rating,
-      createdAt: postDoc.data().createdAt,
+      createdAt: dateToString(postDoc.data().createdAt.toDate()),
     };
     posts.push(tmp);
   });
