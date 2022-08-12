@@ -2,7 +2,7 @@ import { db } from '@/utils/firestore';
 import { FieldValue } from 'firebase-admin/firestore';
 import { Post } from '@/types/post/entity';
 import { PostPatchParam, PostPostParam } from '@/types/post/form';
-import { dateToString } from '@/utils/DateToString';
+import { dateToString } from '@/utils/dateToString';
 
 const postsRef = db.collection('posts');
 
