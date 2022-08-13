@@ -13,5 +13,5 @@ export default (router: Router) => {
   router.patch('/', asyncErrorWrapper(patch));
 
   // idによる投稿削除
-  router.delete('/:postId', asyncErrorWrapper(deleteById));
+  router.delete('/:id', asyncErrorWrapper(deleteById));
 };

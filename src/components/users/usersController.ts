@@ -23,6 +23,6 @@ export const getById = async (req: Request, res: Response, next: NextFunction) =
 
 // userIdによるユーザ削除
 export const deleteById = async (req: Request, res: Response, next: NextFunction) => {
-  await deleteUser(req.params.userId);
+  await deleteUser(req.params.id);
   return res.status(204).end();
 };

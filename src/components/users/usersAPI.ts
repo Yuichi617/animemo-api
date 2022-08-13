@@ -16,5 +16,5 @@ export default (router: Router) => {
   router.get('/:userId', asyncErrorWrapper(getById));
 
   // userIdによるユーザ削除
-  router.delete('/:userId', asyncErrorWrapper(deleteById));
+  router.delete('/:id', asyncErrorWrapper(deleteById));
 };
