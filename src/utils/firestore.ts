@@ -1,6 +1,6 @@
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
-import config from '@/config';
+import config from '@/config/env';
 
 const serviceAccount = config.serviceAccountKey as any;
 

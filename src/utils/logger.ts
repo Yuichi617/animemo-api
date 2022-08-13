@@ -1,5 +1,5 @@
 import winston from 'winston';
-import config from '@/config';
+import config from '@/config/env';
 // Imports the Google Cloud client library for Winston
 import { LoggingWinston } from '@google-cloud/logging-winston';
 

@@ -4,7 +4,7 @@ import usersRoute from '@/components/users';
 import postsRoute from '@/components/posts';
 import errorHandler from '@/handlers/errorHandler';
 import { Request, Response, NextFunction } from 'express';
-import { CustomError } from '@/utils/CustomError';
+import { CustomError } from '@/types/error/CustomError';
 import accessLogger from '@/middlewares/accessLogger';
 
 export default async ({ app }: { app: express.Application }) => {

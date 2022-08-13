@@ -18,6 +18,6 @@ export const editPost = async (param: PostPatchParam): Promise<Post> => {
   return await update(param);
 };
 
-export const deletePost = async (id: string) => {
+export const deletePost = async (id: string): Promise<void> => {
   return await deleteById(id);
 };

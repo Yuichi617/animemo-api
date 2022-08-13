@@ -81,7 +81,7 @@ export const update = async (param: PostPatchParam): Promise<Post> => {
   };
 };
 
-export const deleteById = async (id: string) => {
+export const deleteById = async (id: string): Promise<void> => {
   const postRef = postsRef.doc(id);
   await postRef.update({
     deleteFlag: true,
