@@ -1,6 +1,6 @@
 import config from './config/env';
 import express from 'express';
-import Logger from '@/utils/logger';
+import Logger from '@/libs/logger';
 
 async function startServer() {
   const app = express();

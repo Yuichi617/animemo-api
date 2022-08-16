@@ -1,4 +1,4 @@
-import Logger from '@/utils/logger';
+import Logger from '@/libs/logger';
 import { Request, Response } from 'express';
 
 // エラー処理ハンドラ

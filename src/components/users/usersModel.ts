@@ -1,4 +1,4 @@
-import { db } from '@/utils/firestore';
+import { db } from '@/libs/firestore';
 import { FieldValue } from 'firebase-admin/firestore';
 import { User } from '@/types/user/entity';
 import { UserPatchParam, UserPostParam } from '@/types/user/form';

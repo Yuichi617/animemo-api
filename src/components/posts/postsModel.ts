@@ -1,8 +1,8 @@
-import { db } from '@/utils/firestore';
+import { db } from '@/libs/firestore';
 import { FieldValue } from 'firebase-admin/firestore';
 import { Post } from '@/types/post/entity';
 import { PostPatchParam, PostPostParam } from '@/types/post/form';
-import { dateToString } from '@/utils/dateToString';
+import { dateToString } from '@/utils';
 
 const postsRef = db.collection('posts');
 

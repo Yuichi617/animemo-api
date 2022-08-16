@@ -1,4 +1,4 @@
-import Logger from '@/utils/logger';
+import Logger from '@/libs/logger';
 import { Request } from 'express';
 
 export default (req: Request, res, next) => {
