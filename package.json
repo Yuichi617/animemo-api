@@ -1,7 +1,7 @@
 {
   "name": "animemo-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "backend for animemoApp",
   "main": "src/app.ts",
   "scripts": {
     "start": "node -r tsconfig-paths/register dist/app.js",
@@ -26,14 +26,13 @@
     "url": "git+https://github.com/Yuichi617/animemo-api.git"
   },
   "keywords": [
-    "js",
     "javascript",
     "typescript",
     "node",
     "express"
   ],
   "author": "Yuichi Sugiyama",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Yuichi617/animemo-api/issues"
   },
